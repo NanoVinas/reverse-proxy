@@ -1,0 +1,13 @@
+{
+    "data": [
+      {
+        "name": "example.com",
+        "host": "http://127.0.0.1:3000",
+        "ssl": {
+          "key": "ssl/_.example.com_private_key.key",
+          "cert": "ssl/example.com_ssl_certificate.crt",
+          "ca": "ssl/_.example.com_ssl_certificate_INTERMEDIATE.crt"
+        }
+      }
+    ]
+}

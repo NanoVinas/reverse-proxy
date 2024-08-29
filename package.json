@@ -1,0 +1,31 @@
+{
+    "name": "reserve-proxy",
+    "version": "1.0.0",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "dev": "node --env-file=local.env index.js",
+        "start": "node --env-file=production.env index.js",
+        "dev:domains": "node --env-file=local.env lib/generate_domains.js",
+        "dev:restrictions": "node --env-file=local.env lib/generate_restrictions.js",
+        "start:domains": "node --env-file=production.env lib/generate_domains.js",
+        "start:restrictions": "node --env-file=production.env lib/generate_restrictions.js",
+        "test": "mocha"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "express": "^4.19.2",
+        "fs": "^0.0.1-security",
+        "http-proxy-middleware": "^3.0.0",
+        "https": "^1.0.0",
+        "mysql2": "^3.11.0",
+        "mysql2-promise": "^0.1.4",
+        "path": "^0.12.7",
+        "tls": "^0.0.1"
+    }
+}
